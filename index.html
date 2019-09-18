@@ -9,32 +9,68 @@
     <title>Domino's New Page!</title>
 </head>
 <body>
-    <nav class="navbar navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
             <img src="./images/dominos-pizza-logo-png-1-1.png" width="47" height="47" alt="">
         </a>
-        <a href="#">Order Online</a>
-        <a href="#">Menu</a>
-        <a href="#">Coupons</a>
-        <a href="#">Tracker</a>
-        <a href="#">Pizza Profile</a>
+    
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link text-white" href="#">Order Online</a>
+                    <a class="nav-item nav-link text-white" href="#">Menu</a>
+                    <a class="nav-item nav-link text-white" href="#">Coupons</a>
+                    <a class="nav-item nav-link text-white" href="#">Tracker</a>
+                    <a class="nav-item nav-link text-white" href="#">Pizza Profile</a>
+                  </div>
+                  <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="glyphicon glyphicon-map-marker">View your local Domino's</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Deliver</a>
+                          <a class="dropdown-item" href="#">Carry out</a>
+                        </div>
+                </div>
     </nav>
-    <div class="row">
-            <h6 class='col-3'>Start Your Order</h6>
-            <button type="button" class="btn btn-danger col-3">Delivery</button>
-            <h6 class='col-3'>or</h6>
-            <button type="button" class="btn btn-danger col-3">Carry Out</button>
+    <div class="container text-center">
+    <div class="row row1 justify-content-center">
+            <h5 class='col-sm-3'>Start Your Order</h5>
+            <button type="button" class="btn btn-danger col-sm-2">Delivery</button>
+            <h6 class='col-sm-1'>or</h6>
+            <button type="button" class="btn btn-danger col-sm-2">Carry Out</button>
     </div>
-    <div class="row">
-        <div class="col-6">
+</div>
+
+    <div class="row row2 justify-content-center">
+        <div class="col-sm-4">
             <div class="item" id='item1'></div>
         </div>
-        <div class="col-6">
+        <div class="col-sm-4">
             <div class="item" id="item2"></div>
             <div class="item" id="item3"></div>
         </div>
     </div>
-      
+    <div class="row row3 justify-content-center">
+        <div class="col-sm-7 item" id='item4'></div>
+    </div>
+    <div class="row row4 justify-content-center">
+            <div class="col-sm-8 item" id='item5'></div>
+        </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-7">
+                <a href="#">Order Online</a>
+                <a href="#">Menu</a>
+                <a href="#">Coupons</a>
+                <a href="#">Tracker</a>
+                <a href="#">Pizza Profile</a>
+        </div>
+    </div>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

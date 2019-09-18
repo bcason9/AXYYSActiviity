@@ -1,28 +1,54 @@
+$colors: (
+    primary-blue: #006491,
+    dark-blue: #005177,
+    primary-red: #e31837,
+    text-color: #ffffff,
+    text-secondary: #888888
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
 
 nav {
-    background-color: #006491;
-    color: white;
+    background-color: color(primary-blue);
+    color: color(text-color);
     height: 76;
     text-transform: uppercase;
     
+    div {
+        div {
+            a {
+                color: color(text-color);
+                font-size: 16px;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                padding: 12px 10px;
+                margin: 0px auto;
+                font-weight: bold;
+                
+            }
+            a:hover {
+                text-decoration: none;
+                background-color: color(dark-blue);
+                color: color(text-color);
+            }
+
+            #navbarDropdownMenuLink {
+                border: 2px solid white;
+                border-radius: 5px;
+            }
+
+            
+        }
+
+    }
     
-    a {
-        color: white;
-        font-size: 16px;
-        font-family: 'Arial Narrow', Arial, sans-serif;
-        padding: 12px 10px;
-        margin: 0px auto;
-        font-weight: bold;
-        
-    }
-    a:hover {
-        text-decoration: none;
-        background-color: #005177;
-        color: white;
-        
-        
-    }
 }
+
+.nav-link {
+    color: white;
+}
+
 
 .item {
     border: 1px solid gray;
@@ -31,21 +57,49 @@ nav {
 
 #item1 {
     height: 300px;
-    margin-left: 150px;
-    margin-right: -10px;
+    // margin-left: 125px;
+    // margin-right: -10px;
 }
 
 #item2, #item3 {
     height: 150px;
-    margin-left: -10px;
-    margin-right: 150px;
+    // margin-left: -10px;
+    // margin-right: 125px;
+}
 
+#item4 {
+    height: 100px;
+    border-left: none;
+    border-right: none;
+}
+
+#item5 {
+    height: 200px;
 }
 
 .row {
     text-transform: uppercase;
+    margin: 15px auto;
 
     button {
+        background-color: color(primary-red);
+        font-family: 'Arial Narrow', Arial, sans-serif;
         text-transform: uppercase;
+    }
+}
+
+.row1 {
+    
+    h5 {
+        margin: 5px 0px 0px;
+    }
+
+    h6 {
+        width: 1px;
+        color: color(text-secondary);
+        text-transform: none;
+        font-size: 22px;
+        font-family: italic;
+        margin: 5px 0px 0px;
     }
 }
