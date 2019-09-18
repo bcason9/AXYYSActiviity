@@ -37,6 +37,7 @@ nav {
             #navbarDropdownMenuLink {
                 border: 2px solid white;
                 border-radius: 5px;
+                text-align: center;
             }
 
             
@@ -119,10 +120,34 @@ nav {
 }
 
 .row2 {
+
     img {
         margin: 5px auto;
+       
+    }
+
+   
+
+    .img2 {
+        margin-left: -65px;
+        height: 48%;
+        width: auto;
     }
 
 
+
+}
+
+.row3 {
+
+    text-align: center;
+    
+    h6 {
+        color: color(primary-blue)
+    }
+}
+
+.contain-1 {
+    width: 75%;
 }
 

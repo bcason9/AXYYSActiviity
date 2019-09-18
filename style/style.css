@@ -23,6 +23,7 @@ nav div div a:hover {
 nav div div #navbarDropdownMenuLink {
   border: 2px solid white;
   border-radius: 5px;
+  text-align: center;
 }
 
 nav #profile-btn {
@@ -87,5 +88,23 @@ nav #profile-btn:hover {
 
 .row2 img {
   margin: 5px auto;
+}
+
+.row2 .img2 {
+  margin-left: -65px;
+  height: 48%;
+  width: auto;
+}
+
+.row3 {
+  text-align: center;
+}
+
+.row3 h6 {
+  color: #006491;
+}
+
+.contain-1 {
+  width: 75%;
 }
 /*# sourceMappingURL=style.css.map */
