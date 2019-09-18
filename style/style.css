@@ -25,6 +25,15 @@ nav div div #navbarDropdownMenuLink {
   border-radius: 5px;
 }
 
+nav #profile-btn {
+  background-color: #005177;
+  text-align: center;
+}
+
+nav #profile-btn:hover {
+  color: white;
+}
+
 .nav-link {
   color: white;
 }
@@ -64,6 +73,7 @@ nav div div #navbarDropdownMenuLink {
 
 .row1 h5 {
   margin: 5px 0px 0px;
+  color: #006491;
 }
 
 .row1 h6 {
@@ -73,5 +83,9 @@ nav div div #navbarDropdownMenuLink {
   font-size: 22px;
   font-family: italic;
   margin: 5px 0px 0px;
+}
+
+.row2 img {
+  margin: 5px auto;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,7 @@ nav {
     color: color(text-color);
     height: 76;
     text-transform: uppercase;
+
     
     div {
         div {
@@ -42,8 +43,19 @@ nav {
         }
 
     }
+
+    #profile-btn {
+        background-color: color(dark-blue);
+        text-align: center;
+    }
+
+    #profile-btn:hover {
+        color: white;
+    }
     
 }
+
+
 
 .nav-link {
     color: white;
@@ -57,14 +69,12 @@ nav {
 
 #item1 {
     height: 300px;
-    // margin-left: 125px;
-    // margin-right: -10px;
+   
 }
 
 #item2, #item3 {
     height: 150px;
-    // margin-left: -10px;
-    // margin-right: 125px;
+    
 }
 
 #item4 {
@@ -80,6 +90,7 @@ nav {
 .row {
     text-transform: uppercase;
     margin: 15px auto;
+    
 
     button {
         background-color: color(primary-red);
@@ -89,9 +100,12 @@ nav {
 }
 
 .row1 {
+
+   
     
     h5 {
         margin: 5px 0px 0px;
+        color: color(primary-blue);
     }
 
     h6 {
@@ -103,3 +117,12 @@ nav {
         margin: 5px 0px 0px;
     }
 }
+
+.row2 {
+    img {
+        margin: 5px auto;
+    }
+
+
+}
+
