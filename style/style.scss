@@ -6,6 +6,13 @@ $colors: (
     text-secondary: #888888
 );
 
+$theme-colors: (
+    "primary": #006491,
+    "danger":  #e31837,
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 @mixin laptop {
     @media(min-width: 800px) {
         @content;
@@ -67,6 +74,7 @@ nav {
     #profile-btn {
         background-color: color(dark-blue);
         text-align: center;
+        font-size: 15px;
     }
 
     #profile-btn:hover {
@@ -87,32 +95,20 @@ nav {
     
 }
 
-#item1 {
-    height: 300px;
-   
-}
-
-#item2, #item3 {
-    height: 150px;
-    
-}
 
 #item4 {
-    height: 100px;
+    height: 118px;
     border-left: none;
     border-right: none;
 }
 
-#item5 {
-    height: 200px;
-}
 
 .row {
     text-transform: uppercase;
     margin: 15px auto;
     
     button {
-        background-color: color(primary-red);
+        
         font-family: 'Arial Narrow', Arial, sans-serif;
         text-transform: uppercase;
     }
@@ -159,21 +155,36 @@ nav {
 }
 
 .row2 {
+    
 
     img {
-        margin: 5px auto;
+        margin: 5px 0;
        
     }
 
-    .img1 {
-        width: 100%;
-    }
-   
+
+
+        .img1 {
+            width: 100%;
+        }
+            
+       
+
+    
 
     .img2 {
-       
         height: auto;
         width: 100%;
+    }
+
+    @include laptop {
+        .img1 {
+            height: 80%;
+        }
+
+        .img2 {
+            margin-left: -20px;
+        }
     }
 
 
@@ -181,20 +192,38 @@ nav {
 }
 
 .row3 {
-
     text-align: center;
-    margin: auto 2%;
+    
+    @include laptop {
+        margin-top: -11%;
+    }
+
+    i {
+        color: color(primary-blue);
+
+        // @include mobile {
+            
+            
+        // }
+        
+        @include laptop {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+    }
 
     a {
+        
+
         div {
             background-color: color(primary-blue);
             clip-path: polygon(10% 32%, 89% 32%, 98% 46%, 90% 58%, 10% 58%, 3% 46%);
             padding: 30px;
             width: 100%;
-            margin: -30px 0;
+            margin: -30px 50px -30px 0;
             
-            // height: 30px;
             
+        
             p {
                 margin-top: 3px;
                 font-size: 15px;
@@ -204,42 +233,51 @@ nav {
     
         h5 {
             color: color(primary-blue);
+            font-size: 10px;
         }
     
-       @include mobile {
+       @include laptop {
+            display: inline;
+            
+            
+            div {
+                float: left;
+                padding: 50px;
+                width: 900px;
+                margin: -35px -10px -10px 0;
+                
+                p {
+                    margin-top: 4px;
+                }
+            }
            h5 {
-               font-size: 10px;
+               float: right;
+               font-size: 22px;
+               width: 100%;
+                position: relative;
+                bottom: 95px;
+                margin-left: 180px;
            }
 
-    }
+           @media (max-width: 1127) {
+               div {
+                position: relative;
+                
+                
+               }
+           }
+
+        }
    
     
    }
-
-
-
-    // @include laptop {
-    //     .car-badge {
-    //         width: 300px;
-    //         height: 300px;
-    //         float: left;
-    //         position: relative;
-    //         bottom: 90px;
-    //     }
-
-    //     h5 {
-    //         position: relative;
-    //         top: 25px;
-    //         float: right;
-    //         width: 500px;
-
-    //     }
-    // }
 
    
 }
 
 .row4 {
+
+    margin: 15px;
 
     div {
         height: 50%
