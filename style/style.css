@@ -10595,6 +10595,10 @@ nav div div #navbarDropdownMenuLink {
   margin: 0 20px;
 }
 
+nav div div .dropdown-menu {
+  height: 200px;
+}
+
 nav #profile-btn {
   background-color: #005177;
   text-align: center;
@@ -10635,25 +10639,30 @@ nav #profile-btn:hover {
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 640px) {
   #hiddenbtn {
     display: none;
   }
 }
 
 @media (min-width: 300px) {
-  .row1 h5, .row1 h6, .row1 button.col-sm-2 {
+  .row1 h5, .row1 h6, .row1 button.col-sm-4 {
     display: none;
   }
 }
 
-@media (min-width: 750px) {
-  .row1 h5, .row1 h6, .row1 button.col-sm-2 {
+@media (min-width: 640px) {
+  .row1 h5, .row1 h6, .row1 button.col-sm-4 {
     display: block;
+    height: 80%;
+  }
+  .row1 button.col-sm-4 {
+    width: 80%;
   }
   .row1 h5 {
     margin: 5px 0px 0px;
     color: #006491;
+    font-size: 80%;
   }
   .row1 h6 {
     width: 1px;
@@ -10701,6 +10710,15 @@ nav #profile-btn:hover {
   color: #006491;
 }
 
+@media (min-width: 576px) and (max-width: 800px) {
+  .row3 i {
+    font-size: 35px;
+    position: relative;
+    top: 25px;
+    clear: both;
+  }
+}
+
 @media (min-width: 800px) {
   .row3 i {
     font-size: 60px;
@@ -10726,6 +10744,24 @@ nav #profile-btn:hover {
 .row3 a h5 {
   color: #006491;
   font-size: 10px;
+}
+
+@media (min-width: 576px) and (max-width: 800px) {
+  .row3 a div {
+    position: relative;
+    width: 450px;
+    height: auto;
+    left: 80px;
+  }
+  .row3 a div p {
+    font-size: 8px;
+  }
+  .row3 a h5 {
+    position: relative;
+    left: 260px;
+    bottom: 40px;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -10759,12 +10795,12 @@ nav #profile-btn:hover {
   .row3 a div {
     position: relative;
     bottom: 65px;
-    left: 145px;
+    left: 110px;
   }
   .row3 a h5 {
     position: relative;
     bottom: 155px;
-    font-size: 100%;
+    font-size: 90%;
   }
   .row3 a #car1 {
     margin-left: 120px;

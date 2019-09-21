@@ -26,7 +26,13 @@ $theme-colors: (
 }
 
 @mixin tablet {
-    @media(min-width: 750px) {
+    @media(min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin tabletSm {
+    @media(min-width: 576px) and (max-width: 800px) {
         @content;
     }
 }
@@ -72,7 +78,12 @@ nav {
                 margin: 0 20px;
             }
 
-            
+            .dropdown-menu {
+                
+                height: 200px;
+                
+               
+            }
         }
 
     }
@@ -134,19 +145,26 @@ nav {
 .row1 {
 
     @include mobile {
-        h5, h6, button.col-sm-2 {
+        h5, h6, button.col-sm-4 {
             display: none;
         }
     }
 
     @include tablet {
-        h5, h6, button.col-sm-2 {
+
+        h5, h6, button.col-sm-4 {
             display: block;
+            height: 80%;
+        }
+
+        button.col-sm-4 {
+            width: 80%;
         }
 
         h5 {
             margin: 5px 0px 0px;
             color: color(primary-blue);
+            font-size: 80%;
         }
     
         h6 {
@@ -207,10 +225,12 @@ nav {
     i {
         color: color(primary-blue);
 
-        // @include mobile {
-            
-            
-        // }
+        @include tabletSm {
+            font-size: 35px;
+            position: relative;
+            top: 25px;
+            clear: both;
+        }
         
         @include laptop {
             font-size: 60px;
@@ -242,7 +262,27 @@ nav {
             font-size: 10px;
         }
     
-       @include laptop {
+        @include tabletSm {
+            div {
+                position: relative;
+                width: 450px;
+                height: auto; 
+                left: 80px;
+                
+                p {
+                    font-size: 8px;
+                }
+            }
+
+            h5 {
+                position: relative;
+                left: 260px;
+                bottom: 40px;
+                font-size: 12px;
+            }
+        }
+
+        @include laptop {
             display: inline;
             
             
@@ -273,25 +313,26 @@ nav {
            
 
         }
-        
     
         @include middle {
             div {
                 position: relative;
                 bottom: 65px;
-                left: 145px;
+                left: 110px;
             }
 
             h5 {
                 position: relative;
                 bottom: 155px;
-                font-size: 100%;
+                font-size: 90%;
             }
 
             #car1 {
                 margin-left: 120px;
             }
         }
+
+
    }
 
    
