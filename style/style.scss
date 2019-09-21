@@ -79,10 +79,7 @@ nav {
             }
 
             .dropdown-menu {
-                
                 height: 200px;
-                
-               
             }
         }
 
@@ -175,6 +172,22 @@ nav {
             font-family: italic;
             margin: 5px 0px 0px;
         }
+
+        
+    }
+
+    @include laptop {
+        button.col-sm-4 {
+            width: 65%;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+    
+        h6 {
+            font-size: 20px;
+        }
     }
 }
 
@@ -239,17 +252,13 @@ nav {
     }
 
     a {
-        
-
         div {
             background-color: color(primary-blue);
             clip-path: polygon(10% 32%, 89% 32%, 98% 46%, 90% 58%, 10% 58%, 3% 46%);
             padding: 30px;
             width: 100%;
             margin: -30px 50px -30px 0;
-            
-            
-        
+
             p {
                 margin-top: 3px;
                 font-size: 15px;
@@ -341,15 +350,32 @@ nav {
 .row4 {
 
     margin: 15px;
-
+    
+    h5 {
+        text-transform: none;
+        color: color(text-secondary);
+    }
     div {
-        height: 50%
+        height: 50%;
 
         img {
             height: 50%;
             width: 100%;
         }
     }
+    
+}
+
+.row5 {
+
+    div {
+
+        a {
+            margin: 0px 10px;
+        }
+
+    }
+    
     
 }
 
