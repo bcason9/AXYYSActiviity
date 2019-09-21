@@ -19,6 +19,12 @@ $theme-colors: (
     }
 }
 
+@mixin middle {
+    @media(min-width: 800px) and (max-width: 1127px) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media(min-width: 750px) {
         @content;
@@ -244,8 +250,8 @@ nav {
                 float: left;
                 padding: 50px;
                 width: 900px;
-                margin: -35px -10px -10px 0;
-                
+                margin: -25px -10px -10px 0;
+
                 p {
                     margin-top: 4px;
                 }
@@ -259,17 +265,33 @@ nav {
                 margin-left: 180px;
            }
 
-           @media (max-width: 1127) {
-               div {
-                position: relative;
-                
-                
-               }
-           }
+           #car1 {
+            position: relative;
+            left: 130px
+            }
+
+           
 
         }
-   
+        
     
+        @include middle {
+            div {
+                position: relative;
+                bottom: 65px;
+                left: 145px;
+            }
+
+            h5 {
+                position: relative;
+                bottom: 155px;
+                font-size: 100%;
+            }
+
+            #car1 {
+                margin-left: 120px;
+            }
+        }
    }
 
    

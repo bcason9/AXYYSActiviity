@@ -10736,7 +10736,7 @@ nav #profile-btn:hover {
     float: left;
     padding: 50px;
     width: 900px;
-    margin: -35px -10px -10px 0;
+    margin: -25px -10px -10px 0;
   }
   .row3 a div p {
     margin-top: 4px;
@@ -10749,11 +10749,25 @@ nav #profile-btn:hover {
     bottom: 95px;
     margin-left: 180px;
   }
+  .row3 a #car1 {
+    position: relative;
+    left: 130px;
+  }
 }
 
-@media (min-width: 800px) and (max-width: 1127) {
+@media (min-width: 800px) and (max-width: 1127px) {
   .row3 a div {
     position: relative;
+    bottom: 65px;
+    left: 145px;
+  }
+  .row3 a h5 {
+    position: relative;
+    bottom: 155px;
+    font-size: 100%;
+  }
+  .row3 a #car1 {
+    margin-left: 120px;
   }
 }
 
