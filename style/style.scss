@@ -88,16 +88,49 @@ nav {
     #profile-btn {
         background-color: color(dark-blue);
         text-align: center;
+        text-transform: uppercase;
         font-size: 15px;
+        
+        @media (max-width: 991px) {
+            width: 100%;
+        }
     }
 
     #profile-btn:hover {
         color: white;
     }
     
+    
 }
 
+.modal {
+    text-transform: uppercase;
 
+    .modal-header {
+        background-color: color(primary-blue);
+        
+        .modal-title {
+            color: color(text-color);
+        }
+        button {
+            color: color(text-color);
+        }
+    }
+
+    .modal-body {
+        text-transform: none;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    .modal-footer {
+        .btn-primary {
+            margin-right: 10%;
+        }
+    }
+}
 
 .nav-link {
     color: white;
@@ -192,23 +225,14 @@ nav {
 }
 
 .row2 {
-    
 
     img {
         margin: 5px 0;
-       
     }
-
-
-
-        .img1 {
+    .img1 {
             width: 100%;
-        }
-            
-       
-
-    
-
+    }
+        
     .img2 {
         height: auto;
         width: 100%;
@@ -241,7 +265,8 @@ nav {
         @include tabletSm {
             font-size: 35px;
             position: relative;
-            top: 25px;
+            top: 20px;
+            left: 5%;
             clear: both;
         }
         
@@ -276,7 +301,8 @@ nav {
                 position: relative;
                 width: 450px;
                 height: auto; 
-                left: 80px;
+                top: 70%;
+                left: 5%;
                 
                 p {
                     font-size: 8px;
@@ -285,9 +311,14 @@ nav {
 
             h5 {
                 position: relative;
-                left: 260px;
-                bottom: 40px;
+                left: 60%;
+                bottom: 30%;
                 font-size: 12px;
+            }
+
+            #car1 {
+                position: relative;
+                left: 75%;
             }
         }
 
@@ -351,7 +382,7 @@ nav {
 
     margin: 15px;
     
-    h5 {
+    h4 {
         text-transform: none;
         color: color(text-secondary);
     }
@@ -361,6 +392,11 @@ nav {
         img {
             height: 50%;
             width: 100%;
+        }
+
+        button {
+            position: relative;
+            bottom: 100%;
         }
     }
     

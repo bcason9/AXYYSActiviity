@@ -10602,11 +10602,46 @@ nav div div .dropdown-menu {
 nav #profile-btn {
   background-color: #005177;
   text-align: center;
+  text-transform: uppercase;
   font-size: 15px;
+}
+
+@media (max-width: 991px) {
+  nav #profile-btn {
+    width: 100%;
+  }
 }
 
 nav #profile-btn:hover {
   color: white;
+}
+
+.modal {
+  text-transform: uppercase;
+}
+
+.modal .modal-header {
+  background-color: #006491;
+}
+
+.modal .modal-header .modal-title {
+  color: #ffffff;
+}
+
+.modal .modal-header button {
+  color: #ffffff;
+}
+
+.modal .modal-body {
+  text-transform: none;
+}
+
+.modal .modal-body a {
+  text-transform: uppercase;
+}
+
+.modal .modal-footer .btn-primary {
+  margin-right: 10%;
 }
 
 .nav-link {
@@ -10726,7 +10761,8 @@ nav #profile-btn:hover {
   .row3 i {
     font-size: 35px;
     position: relative;
-    top: 25px;
+    top: 20px;
+    left: 5%;
     clear: both;
   }
 }
@@ -10763,16 +10799,21 @@ nav #profile-btn:hover {
     position: relative;
     width: 450px;
     height: auto;
-    left: 80px;
+    top: 70%;
+    left: 5%;
   }
   .row3 a div p {
     font-size: 8px;
   }
   .row3 a h5 {
     position: relative;
-    left: 260px;
-    bottom: 40px;
+    left: 60%;
+    bottom: 30%;
     font-size: 12px;
+  }
+  .row3 a #car1 {
+    position: relative;
+    left: 75%;
   }
 }
 
@@ -10823,7 +10864,7 @@ nav #profile-btn:hover {
   margin: 15px;
 }
 
-.row4 h5 {
+.row4 h4 {
   text-transform: none;
   color: #888888;
 }
@@ -10835,6 +10876,11 @@ nav #profile-btn:hover {
 .row4 div img {
   height: 50%;
   width: 100%;
+}
+
+.row4 div button {
+  position: relative;
+  bottom: 100%;
 }
 
 .row5 div a {
