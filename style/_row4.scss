@@ -1,0 +1,22 @@
+.row4 {
+
+    margin: 15px;
+    
+    h4 {
+        text-transform: none;
+        color: color(text-secondary);
+    }
+    div {
+        height: 50%;
+
+        img {
+            height: 50%;
+            width: 100%;
+        }
+
+        button {
+            position: relative;
+            bottom: 100%;
+        }
+    }
+}

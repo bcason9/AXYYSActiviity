@@ -1,0 +1,25 @@
+.row2 {
+
+    img {
+        margin: 5px 0;
+    }
+    .img1 {
+            width: 100%;
+    }
+        
+    .img2 {
+        height: auto;
+        width: 100%;
+    }
+
+    @include laptop {
+        .img1 {
+            height: 80%;
+        }
+
+        .img2 {
+            margin-left: -20px;
+        }
+    }
+
+}

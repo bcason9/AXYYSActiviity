@@ -1,0 +1,28 @@
+.modal {
+    text-transform: uppercase;
+
+    .modal-header {
+        background-color: color(primary-blue);
+        
+        .modal-title {
+            color: color(text-color);
+        }
+        button {
+            color: color(text-color);
+        }
+    }
+
+    .modal-body {
+        text-transform: none;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    .modal-footer {
+        .btn-primary {
+            margin-right: 10%;
+        }
+    }
+}

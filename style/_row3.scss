@@ -1,0 +1,123 @@
+.row3 {
+    text-align: center;
+    
+    @include laptop {
+        margin-top: -11%;
+    }
+
+    i {
+        color: color(primary-blue);
+
+        @include tabletSm {
+            font-size: 35px;
+            position: relative;
+            top: 20px;
+            left: 5%;
+            clear: both;
+        }
+        
+        @include laptop {
+            font-size: 60px;
+            margin-top: 20px;
+        }
+    }
+
+    a {
+        div {
+            background-color: color(primary-blue);
+            clip-path: polygon(10% 32%, 89% 32%, 98% 46%, 90% 58%, 10% 58%, 3% 46%);
+            padding: 30px;
+            width: 100%;
+            margin: -30px 50px -30px 0;
+
+            p {
+                margin-top: 3px;
+                font-size: 15px;
+                color: color(text-color);
+            }
+        }
+    
+        h5 {
+            color: color(primary-blue);
+            font-size: 10px;
+        }
+    
+        @include tabletSm {
+            div {
+                position: relative;
+                width: 450px;
+                height: auto; 
+                top: 70%;
+                left: 5%;
+                
+                p {
+                    font-size: 8px;
+                }
+            }
+
+            h5 {
+                position: relative;
+                left: 60%;
+                bottom: 30%;
+                font-size: 12px;
+            }
+
+            #car1 {
+                position: relative;
+                left: 75%;
+            }
+        }
+
+        @include laptop {
+            display: inline;
+            
+            
+            div {
+                float: left;
+                padding: 50px;
+                width: 900px;
+                margin: -25px -10px -10px 0;
+
+                p {
+                    margin-top: 4px;
+                }
+            }
+           h5 {
+               float: right;
+               font-size: 22px;
+               width: 100%;
+                position: relative;
+                bottom: 95px;
+                margin-left: 180px;
+           }
+
+           #car1 {
+            position: relative;
+            left: 130px
+            }
+
+           
+
+        }
+    
+        @include middle {
+            div {
+                position: relative;
+                bottom: 65px;
+                left: 110px;
+            }
+
+            h5 {
+                position: relative;
+                bottom: 155px;
+                font-size: 90%;
+            }
+
+            #car1 {
+                margin-left: 120px;
+            }
+        }
+
+   }
+   
+}

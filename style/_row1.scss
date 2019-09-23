@@ -1,0 +1,51 @@
+.row1 {
+
+    @include mobile {
+        h5, h6, button.col-sm-4 {
+            display: none;
+        }
+    }
+
+    @include tablet {
+
+        h5, h6, button.col-sm-4 {
+            display: block;
+            height: 80%;
+        }
+
+        button.col-sm-4 {
+            width: 80%;
+        }
+
+        h5 {
+            margin: 5px 0px 0px;
+            color: color(primary-blue);
+            font-size: 80%;
+        }
+    
+        h6 {
+            width: 1px;
+            color: color(text-secondary);
+            text-transform: none;
+            font-size: 22px;
+            font-family: italic;
+            margin: 5px 0px 0px;
+        }
+
+        
+    }
+
+    @include laptop {
+        button.col-sm-4 {
+            width: 65%;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+    
+        h6 {
+            font-size: 20px;
+        }
+    }
+}

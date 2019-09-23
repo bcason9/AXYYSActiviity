@@ -1,0 +1,55 @@
+nav {
+    background-color: color(primary-blue);
+    color: color(text-color);
+    height: 76;
+    text-transform: uppercase;
+
+    
+    div {
+        div {
+            a {
+                color: color(text-color);
+                font-size: 16px;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+                padding: 12px 10px;
+                margin: 0px auto;
+                font-weight: bold;
+                
+            }
+            a:hover {
+                text-decoration: none;
+                background-color: color(dark-blue);
+                color: color(text-color);
+            }
+
+            #navbarDropdownMenuLink {
+                border: 2px solid white;
+                border-radius: 5px;
+                text-align: center;
+                margin: 0 20px;
+            }
+
+            .dropdown-menu {
+                height: 200px;
+            }
+        }
+
+    }
+
+    #profile-btn {
+        background-color: color(dark-blue);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    #profile-btn:hover {
+        color: white;
+    }
+    
+    
+}
